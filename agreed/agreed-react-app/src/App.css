@@ -1,0 +1,585 @@
+/* Base styles for the entire page */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Courier New', monospace;
+  background-color: #fff;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Root div where the React app is mounted */
+#root {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* ======================= NAVBAR ======================= */
+
+/* Navbar container styles */
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  font-size: 16px;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+/* Navbar brand/title styling */
+.navbar-title {
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Container for user info and logout in the navbar */
+.navbar-user {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* Text area for user details in navbar */
+.navbar-details {
+  margin-bottom: 5px;
+  text-align: right;
+}
+
+/* Button for logging out in the navbar */
+.navbar-logout {
+  padding: 8px 12px;
+}
+
+/* Wrapper for dropdown menu */
+.nav-links {
+  position: relative;
+  display: inline-block;
+}
+
+/* Button that opens the dropdown */
+.nav-button {
+  background: black;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Hover effect for nav button */
+.nav-button:hover {
+  background: grey;
+}
+
+/* Hidden dropdown menu */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  background: white;
+  color: black;
+  min-width: 200px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  border-radius: 0 0 5px 5px;
+}
+
+/* Dropdown link styling */
+.dropdown-menu a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+/* Hover effect for dropdown links */
+.dropdown-menu a:hover {
+  background: lightgrey;
+}
+
+/* Optional info section in dropdown */
+.dropdown-info {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Show dropdown menu on hover */
+.nav-links:hover .dropdown-menu {
+  display: block;
+}
+
+/* ======================= LAYOUT ======================= */
+
+/* Shared container styles for main pages */
+.container {
+  padding: 100px 20px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 140px);
+  box-sizing: border-box;
+  animation: fadeIn 0.5s ease-in-out;
+  text-align: center;
+}
+
+/* Special container for the account page */
+.container.accounts-page {
+  justify-content: flex-start;
+  overflow-y: auto;
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Scrollable content area */
+.scroll-area {
+  flex: 1;
+  overflow-y: auto;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* Buttons at top of account page */
+.account-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+/* ======================= BUTTONS ======================= */
+
+/* Shared custom button styling */
+.btn-custom {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  border: none;
+  margin-top: 20px;
+  transition: background-color 0.3s ease-in-out, transform 0.2s;
+  cursor: pointer;
+}
+
+/* Hover effect for custom button */
+.btn-custom:hover {
+  background-color: grey;
+  transform: scale(1.05);
+}
+
+/* Wrapper for multiple buttons */
+.btn-group {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* ======================= FORMS ======================= */
+
+/* Input field styling */
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+/* Placeholder styling inside inputs */
+.form-control::placeholder {
+  color: black;
+  opacity: 0.5;
+}
+
+/* Labels for form fields */
+.form-label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* ======================= REPAYMENT ======================= */
+
+.repayment-options {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* Input group with label span */
+.input-group {
+  display: flex;
+  align-items: center;
+}
+
+.input-group span {
+  background: black;
+  color: white;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+}
+
+.input-group input {
+  border-radius: 0 5px 5px 0;
+  flex: 1;
+}
+
+/* ======================= BACK BUTTON ======================= */
+
+.back-button-bottom {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  display: block;
+  max-width: 200px;
+  background: black;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.back-button-bottom:hover {
+  background: grey;
+}
+
+/* ======================= TOP RIGHT BUTTONS ======================= */
+
+.top-right-buttons {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1001;
+}
+
+/* PDF and Print buttons */
+.pdf-button,
+.print-button {
+  background: black;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.pdf-button:hover,
+.print-button:hover {
+  background: grey;
+}
+
+/* ======================= SIGNATURE SECTION ======================= */
+
+.signature-section {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.signature-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 320px;
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: white;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.signature-canvas {
+  border: 2px solid black;
+  width: 100%;
+  height: 150px;
+  touch-action: none;
+}
+
+.signature-img {
+  max-width: 100%;
+  max-height: 100px;
+  margin-top: 10px;
+  display: none;
+}
+
+.signature-button {
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  margin-top: 10px;
+}
+
+.signature-button:hover {
+  background-color: grey;
+}
+
+/* ======================= CONTRACT CARDS ======================= */
+
+.contract-cards {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contract-card {
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  background: white;
+}
+
+.card-header {
+  background-color: black;
+  color: white;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.card-header:hover {
+  background-color: grey;
+}
+
+.card-body {
+  background-color: #f9f9f9;
+  padding: 15px;
+}
+
+/* ======================= CONTRACT TEXT ======================= */
+
+.contract-page {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contract-text {
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+  white-space: pre-wrap;
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+  max-width: 700px;
+  margin: 20px 0;
+  text-align: left;
+}
+
+/* ======================= PAYMENTS / CHECKLIST ======================= */
+
+.progress {
+  width: 100%;
+  height: 20px;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  line-height: 20px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.list-group {
+  width: 100%;
+  max-width: 500px;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.list-group-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  background-color: #fff;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+/* Custom-styled checkboxes */
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid black;
+  border-radius: 3px;
+  cursor: pointer;
+  position: relative;
+  margin-right: 10px;
+}
+
+input[type="checkbox"]:checked {
+  background-color: black;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  width: 3px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  display: none;
+}
+
+input[type="checkbox"]:checked::before {
+  display: block;
+}
+
+/* ======================= PRINT STYLES ======================= */
+
+@media print {
+  body {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-size: 10pt;
+    zoom: 1;
+  }
+
+  /* Hide interactive elements */
+  .top-right-buttons,
+  .bottom-nav,
+  .navbar,
+  .back-button-bottom,
+  .btn-custom,
+  .clear-btn,
+  button,
+  .no-print {
+    display: none !important;
+  }
+
+  .container {
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  #print-area {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 10pt;
+    transform: scale(0.85);
+    transform-origin: top left;
+    overflow: hidden;
+    page-break-inside: avoid;
+  }
+
+  .signature-section {
+    page-break-inside: avoid;
+  }
+
+  .signature-box img {
+    max-height: 50px !important;
+    max-width: 75px !important;
+    display: block !important;
+  }
+
+  #savedContractText,
+  #contractText {
+    text-align: center;
+    margin: 0 auto;
+    background: #f1f1f1;
+    padding: 20px;
+    border-radius: 10px;
+    white-space: pre-wrap;
+    max-width: 700px;
+    font-size: 14px;
+  }
+
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+    page-break-inside: avoid;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+    margin: 0 0 10px 0;
+  }
+
+  p, div {
+    page-break-inside: avoid;
+    margin: 0 0 10px 0;
+  }
+}
+
+/* ======================= ANIMATION ======================= */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ======================= AUTH PAGE ======================= */
+
+.auth-form {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.auth-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+  width: 100%;
+  align-items: center;
+}
+
+/* General layout for inner pages */
+.page-content {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0;
+}

@@ -1,0 +1,226 @@
+{
+  "jimbob": [],
+  "Harper": [
+    {
+      "displayName": "adsfasdf afdsadsf ($52500.00)",
+      "content": "\nThis Loan Agreement (\"Agreement\") is made on 5/1/2025 between:\n\nLENDER:\nHarper Wegener\nAddress: 4357 Tabor Peak\nEmail: harper@gmail.com\nPhone: 858-405-3199\n\nand\n\nBORROWER:\nadsfasdf afdsadsf\nAddress: asdfasdfasdfasdf\nEmail: asdfasdf\nPhone: fdsadfsaasdfasdf\n\nLOAN TERMS:\n- Principal Amount: $50000.00\n- Repayment Schedule: Weekly\n- Start Date: 2025-05-16\n- Simple Interest at 5% | Total: $52500.00 over 20 payments of $2625.00\n\nDEFAULT:\nIf borrower fails to pay, lender may pursue legal recovery.\n\nSIGNATURES:\n",
+      "date": "5/1/2025, 4:38:09 PM",
+      "lenderSignature": "data:image/png;base64,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",
+      "borrowerSignature": "data:image/png;base64,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",
+      "startDate": "2025-05-16",
+      "paymentCount": 20,
+      "repaymentSchedule": "Weekly",
+      "loanAmount": 50000,
+      "interestRate": "5",
+      "interestType": "Simple Interest",
+      "payments": [
+        {
+          "date": "May 15, 2025",
+          "amount": 2625,
+          "paid": false
+        },
+        {
+          "date": "May 22, 2025",
+          "amount": 2625,
+          "paid": false
+        },
+        {
+          "date": "May 29, 2025",
+          "amount": 2625,
+          "paid": false
+        },
+        {
+          "date": "June 5, 2025",
+          "amount": 2625,
+          "paid": false
+        },
+        {
+          "date": "June 12, 2025",
+          "amount": 2625,
+          "paid": false
+        },
+        {
+          "date": "June 19, 2025",
+          "amount": 2625,
+          "paid": false
+        },
+        {
+          "date": "June 26, 2025",
+          "amount": 2625,
+          "paid": false
+        },
+        {
+          "date": "July 3, 2025",
+          "amount": 2625,
+          "paid": false
+        },
+        {
+          "date": "July 10, 2025",
+          "amount": 2625,
+          "paid": false
+        },
+        {
+          "date": "July 17, 2025",
+          "amount": 2625,
+          "paid": false
+        },
+        {
+          "date": "July 24, 2025",
+          "amount": 2625,
+          "paid": false
+        },
+        {
+          "date": "July 31, 2025",
+          "amount": 2625,
+          "paid": false
+        },
+        {
+          "date": "August 7, 2025",
+          "amount": 2625,
+          "paid": false
+        },
+        {
+          "date": "August 14, 2025",
+          "amount": 2625,
+          "paid": false
+        },
+        {
+          "date": "August 21, 2025",
+          "amount": 2625,
+          "paid": false
+        },
+        {
+          "date": "August 28, 2025",
+          "amount": 2625,
+          "paid": false
+        },
+        {
+          "date": "September 4, 2025",
+          "amount": 2625,
+          "paid": false
+        },
+        {
+          "date": "September 11, 2025",
+          "amount": 2625,
+          "paid": false
+        },
+        {
+          "date": "September 18, 2025",
+          "amount": 2625,
+          "paid": false
+        },
+        {
+          "date": "September 25, 2025",
+          "amount": 2625,
+          "paid": false
+        }
+      ]
+    }
+  ],
+  "aesmith": [
+    {
+      "displayName": "Ray  Perry ($110000.00)",
+      "content": "\nThis Loan Agreement (\"Agreement\") is made on 5/3/2025 between:\n\nLENDER:\nAl Smith\nAddress: 4357 Tabor Peak Ave., Las Vegas, NV 89141\nEmail: alfred.edward.smith@gmail.com\nPhone: 6198898444\n\nand\n\nBORROWER:\nRay  Perry\nAddress: askldfjasdfjk;as\nEmail: Ray@gmail.com\nPhone: 7777777\n\nLOAN TERMS:\n- Principal Amount: $100000.00\n- Repayment Schedule: Weekly\n- Start Date: 2025-05-30\n- Simple Interest at 10% | Total: $110000.00 over 10 payments of $11000.00\n\nDEFAULT:\nIf borrower fails to pay, lender may pursue legal recovery.\n\nSIGNATURES:\n",
+      "date": "5/3/2025, 9:28:21 AM",
+      "lenderSignature": "data:image/png;base64,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",
+      "borrowerSignature": "data:image/png;base64,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",
+      "startDate": "2025-05-30",
+      "paymentCount": 10,
+      "repaymentSchedule": "Weekly",
+      "loanAmount": 100000,
+      "interestRate": "10",
+      "interestType": "Simple Interest",
+      "payments": [
+        {
+          "date": "May 29, 2025",
+          "amount": 11000,
+          "paid": true
+        },
+        {
+          "date": "June 5, 2025",
+          "amount": 11000,
+          "paid": true
+        },
+        {
+          "date": "June 12, 2025",
+          "amount": 11000,
+          "paid": true
+        },
+        {
+          "date": "June 19, 2025",
+          "amount": 11000,
+          "paid": true
+        },
+        {
+          "date": "June 26, 2025",
+          "amount": 11000,
+          "paid": false
+        },
+        {
+          "date": "July 3, 2025",
+          "amount": 11000,
+          "paid": false
+        },
+        {
+          "date": "July 10, 2025",
+          "amount": 11000,
+          "paid": false
+        },
+        {
+          "date": "July 17, 2025",
+          "amount": 11000,
+          "paid": false
+        },
+        {
+          "date": "July 24, 2025",
+          "amount": 11000,
+          "paid": false
+        },
+        {
+          "date": "July 31, 2025",
+          "amount": 11000,
+          "paid": false
+        }
+      ]
+    }
+  ],
+  "userForContract": [
+    {
+      "displayName": "Loan to Alice",
+      "content": "This is a sample loan agreement.",
+      "date": "2025-05-28",
+      "lenderSignature": "lender-signature-data",
+      "borrowerSignature": "borrower-signature-data",
+      "lenderQR": "",
+      "borrowerQR": "",
+      "startDate": "2025-06-01",
+      "paymentCount": 4,
+      "repaymentSchedule": "Monthly",
+      "loanAmount": 500,
+      "interestRate": 0,
+      "interestType": "None",
+      "payments": [
+        {
+          "dueDate": "2025-06-01",
+          "amount": 125,
+          "paid": false
+        },
+        {
+          "dueDate": "2025-07-01",
+          "amount": 125,
+          "paid": false
+        },
+        {
+          "dueDate": "2025-08-01",
+          "amount": 125,
+          "paid": false
+        },
+        {
+          "dueDate": "2025-09-01",
+          "amount": 125,
+          "paid": false
+        }
+      ]
+    }
+  ]
+}

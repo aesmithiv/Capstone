@@ -1,0 +1,64 @@
+[
+  {
+    "username": "jimbob",
+    "password": "software",
+    "email": "alfred.edward.smith@gmail.com",
+    "firstName": "Al",
+    "lastName": "Smith",
+    "phone": "6198898444",
+    "address": "4357 Tabor Peak Ave., Las Vegas, NV 89141"
+  },
+  {
+    "username": "Harper",
+    "password": "Harper123",
+    "email": "harper@gmail.com",
+    "firstName": "Harper",
+    "lastName": "Wegener",
+    "phone": "858-405-3199",
+    "address": "4357 Tabor Peak"
+  },
+  {
+    "username": "aesmith",
+    "password": "software",
+    "email": "alfred.edward.smith@gmail.com",
+    "firstName": "Al",
+    "lastName": "Smith",
+    "phone": "6198898444",
+    "address": "4357 Tabor Peak Ave., Las Vegas, NV 89141"
+  },
+  {
+    "username": "testuser1",
+    "password": "testpass",
+    "email": "test1@example.com",
+    "firstName": "Test",
+    "lastName": "User"
+  },
+  {
+    "username": "user1748469461433",
+    "password": "testpass",
+    "email": "user1748469461433@example.com",
+    "firstName": "Test",
+    "lastName": "User"
+  },
+  {
+    "username": "user1748469500052",
+    "password": "testpass",
+    "email": "user1748469500052@example.com",
+    "firstName": "Test",
+    "lastName": "User"
+  },
+  {
+    "username": "user1748469564151",
+    "password": "testpass",
+    "email": "user1748469564151@example.com",
+    "firstName": "Test",
+    "lastName": "User"
+  },
+  {
+    "username": "user1748469656515",
+    "password": "testpass",
+    "email": "user1748469656515@example.com",
+    "firstName": "Test",
+    "lastName": "User"
+  }
+]
